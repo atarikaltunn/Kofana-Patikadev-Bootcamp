@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <label for="intA">int1: (10-1000):</label>
+    <input type="number" id="intA" name="intA" min="10" max="1000"> <br> <br>
+
+    <label for="intB">int2: (10-1000):</label>
+    <input type="number" id="intB" name="intB" min="10" max="1000"> <br> <br>
+    
+    <label for="operation">Operation:</label>
+    <input list="operations" name="operation" id="operation">
+    <datalist id="operations">
+      <option value="Add">
+      <option value="Substract">
+      <option value="Multiply">
+      <option value="Divide">
+    </datalist> <br><br>
+    <input type="button" id="calculate" value="Calculate" >
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

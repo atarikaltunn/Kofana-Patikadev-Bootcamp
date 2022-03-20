@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodluyoruz Bootcamp Başvuru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kofana Software & Patika.dev <br>
+            Developer Bootcamp Başvuru Formu </h1>
+        <form id="bootcampForm" method="post" action="">
+
+
+            <div class="form">
+                <label class="question" for="name">İsim Soyisim:</label> <br>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form">
+                <label class="question" for="email">E-mail:</label> <br>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form">
+                <label class="question" for="age">Yaş:</label> <br>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <div class="form">
+                <label class="question" for="university">Üniversite:</label> <br>
+                <input type="text" name="university" id="university" required>
+            </div>
+            <div class="form">
+                <label class="question" for="department">Bölüm:</label> <br>
+                <input type="text" name="department" id="department" required>
+            </div>
+
+            <label class="question" for="grade-choice">Sınıf:</label> <br>
+            <input list="grade-list" id="grade-choice" name="grade-choice" />
+            <datalist id="grade-list">
+                <option value="İngilizce Hazırlık">
+                <option value="1. Sınıf">
+                <option value="2. Sınıf">
+                <option value="3. Sınıf">
+                <option value="4. Sınıf">
+                <option value="Mezun">
+            </datalist>
+
+            <div class="form">
+                <label class="question" for="city">Bulunduğunuz Şehir:</label> <br>
+                <input type="text" name="city" id="city" required>
+            </div> <br>
+            <fieldset>
+                <legend>Daha önce Kodluyoruz veya Patika.dev Bootcamp'ine katıldınız mı?</legend> <br>
+
+                <input type="radio" id="kodluyoruz" name="bootcamp" value="sadece kodluyoruza katılmış" checked>
+                <label class="answer" for="kodluyoruz">Kodluyoruz Bootcamp'ine katıldım.</label><br />
+
+                <input type="radio" id="patika" name="bootcamp" value="sadece patikaya katılmış">
+                <label class="answer" for="patika">Patika.dev Bootcamp'ine katıldım.</label><br />
+
+                <input type="radio" id="both" name="bootcamp" value="ikisine de katılmış">
+                <label class="answer" for="both">Kodluyoruz ve Patika.dev Bootcamp'lerine katıldım.</label> <br />
+
+                <input type="radio" id="none" name="bootcamp" value="hiçbirine katılmamış">
+                <label class="answer" for="none">Daha önce Bootcamp'e katılmadım.</label>
+            </fieldset>
+            <div class="form"> <br>
+                <label class="question" for="hobby">Hobileriniz:</label> <br>
+                <input type="textarea" name="hobby" id="hobby" required>
+            </div>
+            <input type="button" id="submitBtn" onclick=onSubmit() value="Kayıt ol"> 
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
